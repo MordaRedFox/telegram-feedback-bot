@@ -1,0 +1,188 @@
+### Python ###
+# Виртуальные окружения и environment-файлы
+.venv/
+venv/
+env/
+env.bak/
+ENV/
+env/
+pythonenv*
+*.venv
+.env
+.env[0-9]*
+.env.local
+.env.*.local
+.env.test
+.env.development
+.env.production
+.venv*/
+
+# Кэш Python и скомпилированные файлы
+__pycache__/
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+.python-version
+pip-wheel-metadata/
+pip-delete-this-directory.txt
+
+# Установщики и зависимости
+*.manifest
+*.spec
+pip-log.txt
+requirements/*.txt
+!requirements/base.txt
+*.hash
+
+
+### IDE ###
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+*.swp
+*.swo
+.history/
+
+# PyCharm/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Другие редакторы
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+*.komodoproject
+*.kdev4
+*.sw?
+
+
+### Операционные системы ###
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+*.lnk
+*.stackdump
+[Tt]humbs.db
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+
+### Тестирование и отладка ###
+test_data/
+coverage/
+htmlcov/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.pytest_cache/
+.nox/
+output.xml
+junit.xml
+test-reports/
+*.log
+*.pot
+*.prof
+
+
+### Документация ###
+docs/_build/
+docs/api/
+docs/_static/
+docs/_templates/
+
+
+### Jupyter ###
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Jupyter Lab
+.jupyter/
+
+
+### Прочее ###
+# Локальные настройки
+local_settings.py
+local_settings_*.py
+local_*.py
+
+# Бинарные файлы
+*.exe
+*.dll
+*.bin
+*.dat
+*.dump
+*.pyc
+*.pyo
+*.pyd
+
+# Логи и базы данных
+*.log
+*.sql
+*.sqlite
+*.db
+*.dump
+*.rdb
+
+# Временные файлы
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+~$*
+*.old
+
+# Пакеты и архивы
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.whl
+
+# Конфигурационные файлы (кроме тех, что нужно сохранить)
+*.yml
+*.yaml
+!*.example.yml
+!*.example.yaml
