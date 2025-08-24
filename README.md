@@ -1,112 +1,223 @@
-# Feedback Bot 🤖
+<div align="center">
 
-**Choose language:**
-[English](README.md) | [Русский](README.ru.md)
+# Telegram Feedback Bot 🤖
+
+## Сменить язык: [Русский](README.ru.md)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 [![Telegram Bot](https://img.shields.io/badge/Telegram%20Bot-20.0%2B-blue.svg)](https://python-telegram-bot.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Telegram bot for feedback between users and the administrator with multilingual support and a flexible localization system.
+</div>
 
-## 🌟 Key Features
+---
 
-### 👤 For Users
-- 📩 Send three types of messages to admin:
-  - 💡 Suggestion
-  - 🚫 Complaint
-  - 💬 Message
-- 🌐 Multilingual support (Russian/English)
-- ⏳ Single active message system (must wait for reply before sending new messages)
+## 🌟 Features
 
-### 👨‍💻 For Admin
-- 🔔 View pending/unanswered messages
-- ✉️ Direct replies to specific messages
-- 📜 Full message history with pagination
-- 🌐 Multilingual interface (Russian/English)
+<div align="center">
 
-## How the Bot Works
+<table>
+    <tr>
+        <td valign="top" width="50%">
+            <h3 align="center">👤 For Users</h3>
+            <p align="center">
+                <img src="https://img.shields.io/badge/🌐-Multilingual-green"
+                    alt="Multilingual">
+                <img src="https://img.shields.io/badge/📩-Send%20Messages-blue"
+                    alt="Send Messages">
+                <img src="https://img.shields.io/badge/⏳-One%20Active%20Message-orange"
+                    alt="One Active Message">
+            </p>
+            <div style="text-align: left; margin-left: 20px;">
+                <ul style="text-align: left; padding-left: 20px;">
+                    <li>🌐 Multilingual support (Russian and English)</li>
+                    <li>📩 Send three types of messages to admin:
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li>💡 Suggestion</li>
+                            <li>🚫 Complaint</li>
+                            <li>💬 Message</li>
+                        </ul>
+                    </li>
+                    <li>⏳ One active message (new can be sent only after response)</li>
+                </ul>
+            </div>
+        </td>
+        <td valign="top" width="50%">
+            <h3 align="center">👨‍💻 For Administrator</h3>
+            <p align="center">
+                <img src="https://img.shields.io/badge/🌐-Multilingual-green"
+                    alt="Multilingual">
+                <img src="https://img.shields.io/badge/🔔-View%20Messages-blue"
+                    alt="View Messages">
+                <img src="https://img.shields.io/badge/✉️-Reply%20to%20Users-orange"
+                    alt="Reply to Users">
+                <img src="https://img.shields.io/badge/📜-Message%20History-purple"
+                    alt="Message History">
+            </p>
+            <div style="text-align: left; margin-left: 20px;">
+                <ul style="text-align: left; padding-left: 20px;">
+                    <li>🌐 Multilingual support (Russian and English)</li>
+                    <li>🔔 View unanswered messages</li>
+                    <li>✉️ Reply to specific messages</li>
+                    <li>📜 View full message history with pagination</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
 
-### 🔹 For Users:
-- User sends a message through the bot  
-- They get an **active message** (awaiting response)  
-- While the active message is pending, the user **cannot** send new messages  
+</div>
 
-### 🔹 For Admin:
-- Can **reply** to users' unanswered messages  
-- Has access to **message history** with each user  
-- Can respond to pending messages **via conversation history**
+---
 
 ## 🛠 Technologies
 
-| Component            | Version      | Description                          |
-|----------------------|--------------|--------------------------------------|
-| Python               | 3.10+        | Core development language            |
-| python-telegram-bot  | 20.0+        | Telegram API framework               |
-| SQLite3              | -            | Data storage                         |
-| Logging              | -            | Standard logging module              |
-| Architecture         | -            | Fully asynchronous                   |
+<div align="center">
 
-## ⚙️ Installation & Setup
+<table>
+    <tr>
+        <th>Component</th>
+        <th>Version</th>
+        <th>Description</th>
+        <th>Badge</th>
+    </tr>
+    <tr align="center">
+        <td>Python</td>
+        <td>3.10+</td>
+        <td>Main development language</td>
+        <td><img src="https://img.shields.io/badge/Python-310%2B-3776ABlogo=pythonlogoColor=white" alt="Python"></td>
+    </tr>
+    <tr align="center">
+        <td>python-telegram-bot</td>
+        <td>20.0+</td>
+        <td>API for Telegram integration</td>
+        <td><img src="https://img.shields.io/badge/Telegram%20Bot-20.0%2B-26A5E4?logo=telegram&logoColor=white" alt="Telegram Bot"></td>
+    </tr>
+    <tr align="center">
+        <td>SQLite3</td>
+        <td>-</td>
+        <td>Data storage</td>
+        <td><img src="https://img.shields.io/badge/SQLite3-✓-003B57?logo=sqlite&logoColor=white" alt="SQLite3"></td>
+    </tr>
+    <tr align="center">
+        <td>Logging</td>
+        <td>-</td>
+        <td>Standard logging module</td>
+        <td><img src="https://img.shields.io/badge/Logging-✓-000000?logo=logging&logoColor=white" alt="Logging"></td>
+    </tr>
+    <tr align="center">
+        <td>Architecture</td>
+        <td>-</td>
+        <td>Fully asynchronous</td>
+        <td><img src="https://img.shields.io/badge/Asynchronous-✓-FF6B6B?logo=asynclogoColor=white" alt="Asynchronous"></td>
+    </tr>
+</table>
 
-### Requirements
-1. Python 3.10 or newer
-2. Telegram account
-3. Bot created via @BotFather
+</div>
 
-### Getting Your Telegram ID
-1. Locate the @userinfobot in Telegram
-2. Send it the `/start` command
-3. The bot will reply with your Telegram ID (a numeric value like `123456789`)
+---
 
-### Obtaining Bot Token
+## 🔐 Installation and Setup
+
+### 📋 Requirements
+
+<div align="center">
+
+<table>
+    <tr align="center">
+        <th>Requirement</th>
+        <th>Description</th>
+        <th>Badge</th>
+    </tr>
+    <tr align="center">
+        <td>Python</td>
+        <td>Version 3.10 or newer</td>
+        <td><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python"></td>
+    </tr>
+    <tr align="center">
+        <td>Telegram</td>
+        <td>Telegram account</td>
+        <td><img src="https://img.shields.io/badge/Telegram-✓-26A5E4?logo=telegram&logoColor=white" alt="Telegram"></td>
+    </tr>
+    <tr align="center">
+        <td>BotFather</td>
+        <td>Bot created via @BotFather</td>
+        <td><img src="https://img.shields.io/badge/BotFather-✓-26A5E4?logo=telegram&logoColor=white" alt="BotFather"></td>
+    </tr>
+</table>
+
+</div>
+
+### 🔍 Getting Telegram ID
+1. Find @userinfobot in Telegram
+2. Send him the `/start` command
+3. The bot will reply with your ID (a number like `123456789`)
+
+### 🔑 Getting Bot Token
 1. Open @BotFather in Telegram
 2. Use the `/newbot` command to create a new bot
-3. Upon creation, you'll receive an access token (format: `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11`)
+3. After creation, get the token (looks like `123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11`)
 
-### Configuration Setup
-Open the `config.py` file and modify these values at the top of the file:
+### ⚙️ Configuration Setup
+Open the `config.py` file and replace the following values at the beginning of the file:
 
 ```python
-# Your admin user ID (obtained from @userinfobot)
+# Your personal admin ID (received from @userinfobot)
 YOUR_CHAT_ID = '!!!⚠️ your chat id ⚠️!!!'  # Replace with your ID
 
-# Your bot token (obtained from @BotFather)
-TELEGRAM_BOT_TOKEN = '!!!⚠️ your bot token ⚠️!!!'  # Replace with your bot token
+# Your bot token (received from @BotFather)
+TELEGRAM_BOT_TOKEN = '!!!⚠️ your bot token ⚠️!!!'  # Replace with bot token
 ```
 
-### Install dependencies
-```bash
+### 📦 Installing Dependencies
+```
 pip install -r requirements.txt
 ```
 
-### 🚀 Launch the bot
-```bash
+### 🚀 Starting the Bot
+```
 python main.py
 ```
 
-## 📋 Project structure
+---
+
+## 📋 Project Structure
+
 ```
-feedback-bot/
-├── config.py         # Configuration and localization
-├── database.py       # Models and database operations
-├── handlers.py       # Message handlers
-├── keyboards.py      # Keyboard generation
-├── main.py           # Entry point
-├── requirements.txt  # Dependencies
-├── feedback_bot.db   # Database (auto-created)
-└── bot.log           # Log file (auto-created)
+telegram-feedback-bot/
+├── bot/
+│   ├── config.py         # Configuration and localization
+│   ├── database.py       # Models and database operations
+│   ├── handlers.py       # Message handlers
+│   ├── keyboards.py      # Keyboard generation
+│   └── main.py           # Main executable file
+├── .gitignore            # Git ignored files
+├── bot.log               # Log file (created automatically)
+├── feedback_bot.db       # Database (created automatically)
+├── LICENSE               # Project license
+├── README.md             # English documentation
+├── README.ru.md          # Russian documentation
+└── requirements.txt      # Dependencies
 ```
+
+---
 
 ## 💡 Tips:
-- All messages are saved to the database, even after bot restart
-- Check the bot.log file to view logs
-- The database and log files are created automatically on first launch
+- 📊 All messages are saved in the database, even after bot restart
+- 🔍 Check bot.log file to view logs
+- ⚡ Database and log files are created automatically on first launch
 
 ## ⚠️ Important Note
-This project was developed by a self-taught beginner programmer. The code may contain:
-- Errors and bugs
-- Suboptimal solutions
-- Architectural imperfections
+This project was developed by a beginner self-taught programmer. The code may contain:
+- ❌ Errors and bugs
+- ⚡ Suboptimal solutions
+- 🛡️ Architectural shortcomings
 
-I'm open to constructive criticism and code improvement suggestions. If you find an error or know how to improve something - please create an issue or pull request!
+---
+
+## 📩 Contacts
+I'm open to constructive criticism and suggestions for code improvement. If you found an error or know how to do something better - please contact me!
+
+[![Telegram](https://img.shields.io/badge/-MordaRedFox-0088cc?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/MordaRedFox)
+&nbsp;
+[![Email](https://img.shields.io/badge/-mordaredfox@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mordaredfox@gmail.com)
